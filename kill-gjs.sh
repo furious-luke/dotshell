@@ -1,6 +1,6 @@
 #/bin/bash
-EXISTS=`ps aux | grep kill-gjs | wc -l`
-if [ "$EXISTS" -lt 2 ]; then
+EXISTS=`ps aux | grep kill-gjs.sh | wc -l`
+if [ "$EXISTS" -lt 4 ]; then
     while true
     do
         killall -9 gjs &> /dev/null

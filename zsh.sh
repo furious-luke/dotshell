@@ -87,4 +87,4 @@ function findlatest {
     find $1 -type f -print0 | xargs -0 stat --format '%Y :%y %n' | sort -nr | cut -d: -f2- | head
 }
 
-nohup $HOME/.shell/kill-gjs.sh &
+nohup $HOME/.shell/kill-gjs.sh > /dev/null 2>&1 &
