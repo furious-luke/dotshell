@@ -71,6 +71,8 @@ eval "$(direnv hook zsh)"
 
 eval "$(ssh-agent -s)" &> /dev/null
 
+export PATH=$HOME/.local/bin:$PATH
+
 function e {
     emacs -nw $1
 }
