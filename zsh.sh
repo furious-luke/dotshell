@@ -65,6 +65,9 @@ export npm_config_prefix=~/.node_modules
 # PyEnv
 #
 
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
 eval "$(pyenv init -)" &> /dev/null
 eval "$(pyenv virtualenv-init -)" &> /dev/null
 
