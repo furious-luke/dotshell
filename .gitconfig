@@ -19,8 +19,8 @@
         tool = meld
 [mergetool "meld"]
         cmd = meld "$LOCAL" "$MERGED" "$REMOTE" --output "$MERGED"
-[pager]
-        log = gitmoji-log | less --tabs=4 -rFX
+# [pager]
+#         log = gitmoji-log | less --tabs=4 -rFX
 [commit]
 	gpgSign = true
 [submodule]
