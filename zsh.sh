@@ -100,3 +100,9 @@ function findlatest {
 }
 
 # nohup $HOME/.shell/kill-gjs.sh > /dev/null 2>&1 &
+
+#
+# Golang
+#
+
+export PATH="$PATH:$(go env GOPATH)/bin"
